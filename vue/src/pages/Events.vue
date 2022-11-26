@@ -1,22 +1,23 @@
 <template>
 
 <body class="flex flex-col">
-  <div class="flex items-center justify-between pl-[15%] pr-[10%] mt-[25px] mb-[25px] w-full">
-    <h1 class="font-bold text-3xl mb-[20%]">Events</h1>
-      <EventCard class="mr-[13%]"></EventCard>
-    <div class="float-right">
-      <PrimaryButton text="Edit" color="white" width="100" fontSize="12" ></PrimaryButton>
+
+  <div class="flex items-center justify-between pl-[15%] pr-[10%] mt-[25px] mb-[25px] w-full">  
+    <h1 class="font-bold text-3xl mb-[20%] pb-[15%]">Events</h1>
+    <div class="float-right pl-[47.890%]   mb-[17%] w-full">
+        <EditButton text="Edit Events"></EditButton>
+      <div class="float-right pr-[40%]">
+        <EventCard></EventCard>
+      </div>
     </div>
-    
+
   </div>
 
-  <div class="flex items-center justify-between pl-[15%] pr-[10%] mt-[25px] mb-[25px] w-full">
-    <h1 class="font-bold text-3xl">News articles</h1>
-
-    <div class="float-right">
-      <PrimaryButton text="Add Article" color="white" width="100" fontSize="12" ></PrimaryButton>
-    </div>
-    
+  <div class="flex items-center justify-between pl-[15%] pr-[10%] mt-[] mb-[] w-full">
+    <h1 class="font-bold text-3xl" >News articles</h1>
+      <div class="float-right pl-[50%]  mb-[2px] w-full">
+          <EditButton text="Add Articles"></EditButton>
+      </div>
 
   </div>
   <div>
@@ -45,7 +46,7 @@ import SearchButton from '../components/Buttons/SearchButton.vue';
 import EventCard2Vue from '../components/Cards/Events/EventCard2.vue';
 import EventCard from '../components/Cards/Events/EventCard.vue';
 import PaginationButtonVue from '../components/Buttons/PaginationButton.vue';
-
+import EditButton from '../components/Buttons/EditButton.vue';
 export default{
   components: {
     Navbar,
@@ -54,7 +55,9 @@ export default{
     SearchButton,
     EventCard2Vue,
     EventCard,
-    PaginationButtonVue
+    PaginationButtonVue,
+    EditButton
+    
 },
 }
 </script>
